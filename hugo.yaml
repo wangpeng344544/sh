@@ -1,0 +1,42 @@
+baseURL: https://YOUR_USERNAME.github.io/
+locale: zh-CN
+title: AI 深度
+theme: PaperMod
+paginate: 10
+enableRobotsTXT: true
+enableEmoji: true
+
+params:
+  description: "AI 开发与自动化 — 一人公司的技术实践"
+  author: AI-OS
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  comments: false
+  homeInfoParams:
+    Title: "AI 深度"
+    Content: "聚焦 AI 开发与自动化。一人公司视角的技术实践、工具链搭建、增长策略。"
+
+menu:
+  main:
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: 归档
+      url: /archive/
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
